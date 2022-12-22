@@ -1,0 +1,88 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock title %}</title>
+    <link rel="stylesheet" href="{% static 'main.css' %}">
+    <script src="https://kit.fontawesome.com/8416825384.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="{% static 'Favicon.png' %}" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        
+        <div class="nav-bar">
+            <a href="http://127.0.0.1:8000"><div class="menu-logo"> <img src="{% static 'logo-podstawowe-2000dpi-plik-rastrowy-do-internetu.png' %}" alt="logo" class="logo">  </div></a>
+            <div class="burger">
+                <i class="fas fa-bars show"></i>
+                <i class="fas fa-times "></i>
+            </div>
+            <div>
+                <nav>
+                    <a href="http://127.0.0.1:8000" class='house'><i class="fas fa-home"></i></a>
+                    <a href="http://127.0.0.1:8000/about">O nas</a>
+                    <a href="http://127.0.0.1:8000/products">Produkty</a>
+                    <a href="http://127.0.0.1:8000/contact">Kontakt</a>
+                </nav>
+            </div>
+        </div>
+        <div class="banner"></div>
+        <div class="nav">
+            <div class="foto-bar i1">
+                <h4>Klejonka okienna</h4>
+            </div>
+            <div class="foto-bar i2">
+                <h4>Klejonka drzwiowa</h4>
+            </div>
+            <div class="foto-bar i3">
+                <h4>Ościeżnice</h4>
+            </div>
+            <div class="foto-bar i4">
+                <h4>Pellet</h4>
+            </div>
+        </div>
+    </header>
+    {% block page %}
+    {% endblock page %}
+
+    <footer>
+        <div class="foot">
+            
+            <div class="about foot-card">
+                <h6>Stolarnia</h6>
+                <img src="{% static 'logo-podstawowe-2000dpi-plik-rastrowy-do-internetu.png' %}" alt="Logo Martrak"
+                    class="logo">
+                <p class="was">Współpracujemy wieloma przedsiębiorcami z branży drzewnej, drzwiowej i okiennej. Oprócz
+                    produkcji
+                    zajmujemy się pośredniczeniem w handlu wyrobami z drewna. Doprowadziliśmy do wielu udanych
+                    transakcji
+                    między firmami z całej Polski i nie tylko. Prowadzimy sprzedaż od Londynu aż po Pekin.</p>
+            </div>
+            <div id="row-flex">
+                <div class="contact foot-card">
+                    <h6>Kontakt</h6>
+                    <p>Martrak S.C.</p><br>
+                    <p>Góry Mokre 45a</p><br>
+                    <p>97-570 Przedbórz <br>woj. łódzkie</p><br>
+                    <p>tel. +48 510 216 758</p><br>
+                    <p><b>martak@onet.pl</b></p>
+                </div>
+            
+                <div class="certificate foot-card">
+                    <h6>Certfikaty</h6>
+                    <div class="img-box">
+                        <img src="{% static 'certyfikat_fsc.jpg' %}" alt="logo-male" class="half">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p id="copyright">&#9400; Copyright by Dawid Marszalik</p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="{% static 'main.js' %}"></script>
+</body>
+
+</html>

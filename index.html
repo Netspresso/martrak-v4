@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona główna</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/8416825384.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="https://martrak-img.s3.us-west-2.amazonaws.com/Favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        
+        <div class="nav-bar">
+            <a href="index.html"><div class="menu-logo"> <img src="https://martrak-img.s3.us-west-2.amazonaws.com/logo-podstawowe-2000dpi-plik-rastrowy-do-internetu.png" alt="logo" class="logo">  </div></a>
+            <div class="burger">
+                <i class="fas fa-bars show"></i>
+                <i class="fas fa-times "></i>
+            </div>
+            <div>
+                <nav>
+                    <a href="index.html" class='house'><i class="fas fa-home"></i></a>
+                    <a href="about.html">O nas</a>
+                    <a href="products.html">Produkty</a>
+                    <a href="contact.html">Kontakt</a>
+                </nav>
+            </div>
+        </div>
+        <div class="banner"></div>
+        <div class="nav">
+            <div class="foto-bar i1">
+                <h4>Klejonka okienna</h4>
+            </div>
+            <div class="foto-bar i2">
+                <h4>Klejonka obłogowana</h4>
+            </div>
+            <div class="foto-bar i3">
+                <h4>Ościeżnice</h4>
+            </div>
+            <div class="foto-bar i4">
+                <h4>Pellet</h4>
+            </div>
+        </div>
+    </header>
+  
+    <main>
+        <div class="card">
+            <p class="card-title">Coś o firmie</p>
+            <img src="/media/{{description.img}}" alt="tu zrobić okienko ze zmieniającymi się zdjęciami" class='view'>
+        </div>
+    </main>
+
+    <footer>
+        <div class="foot">
+            
+            <div class="about foot-card">
+                <h6>Stolarnia</h6>
+                <img src="https://martrak-img.s3.us-west-2.amazonaws.com/logo-podstawowe-2000dpi-plik-rastrowy-do-internetu.png" alt="Logo Martrak"
+                    class="logo">
+                <p class="was">Współpracujemy wieloma przedsiębiorcami z branży drzewnej, drzwiowej i okiennej. Oprócz
+                    produkcji
+                    zajmujemy się pośredniczeniem w handlu wyrobami z drewna. Doprowadziliśmy do wielu udanych
+                    transakcji
+                    między firmami z całej Polski i nie tylko. Prowadzimy sprzedaż od Londynu aż po Pekin.</p>
+            </div>
+            <div id="row-flex">
+                <div class="contact foot-card">
+                    <h6>Kontakt</h6>
+                    <p>Martrak</p><br>
+                    <p>Góry Mokre 45a</p><br>
+                    <p>97-570 Przedbórz <br>woj. łódzkie</p><br>
+                    <p>tel. +48 510 216 758</p><br>
+                    <p><b>martak@onet.pl</b></p>
+                </div>
+            
+                <div class="certificate foot-card">
+                    <h6>Certfikaty</h6>
+                    <div class="img-box">
+                        <img src="https://martrak-img.s3.us-west-2.amazonaws.com/certyfikat_fsc.jpg" alt="logo-male" class="half">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p id="copyright">&#9400; Copyright by Dawid Marszalik</p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
+
